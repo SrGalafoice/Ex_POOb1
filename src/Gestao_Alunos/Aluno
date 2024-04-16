@@ -1,0 +1,41 @@
+import java.util.Date;
+
+public class Aluno {
+    long id;
+    Date nascimento = new Date();
+    String nome;
+    String Ra;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getRa(){
+        return Ra;
+    }
+    public void setRa(String Ra){
+        this.Ra = Ra;
+    }
+    public long getid(){
+        return id;
+    }
+    public void setid(long id){
+
+        this.id = id;
+    }
+
+    public Date getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(Date nascimento) {
+        this.nascimento = nascimento;
+    }
+
+    public  String toString(){
+        return "Nome: "+getNome()+"\nRA: " + getRa() +"\nid: "+getid() + "\nnascimento: " +getNascimento();
+    }
+}
